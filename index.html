@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$HIPPO - Hippopotenuse | Bonk.fun Meme Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Comic+Neue:wght@300;400;700&family=Bubblegum+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand">
+        <span class="brand-symbol">$</span>
+        <span class="brand-text">HIPPO</span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#community" class="nav-link">Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-main">HIPPOPOTENUSE</span>
+            <span class="title-sub">The Mathematical Meme</span>
+            <span class="title-sub">CA: quW1pKeYWi9rL6wdrKngo9ZiR92iLPtAFcZeDu3bonk</span>
+          </h1>
+          <p class="hero-description">
+            Where geometry meets cuteness! A hippo sliding down the hypotenuse of a right triangle.
+            The perfect blend of education and entertainment for the crypto community.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="scrollToCalculator()">Try Calculator</button>
+            <button class="btn btn-primary" onclick="scrollToAbout()">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hippopotenuse-image-container">
+            <img src="image.png" alt="Hippopotenuse - A cute hippo sliding down the hypotenuse of a right triangle"
+              class="hippopotenuse-image">
+            <div class="image-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator-section">
+      <div class="container">
+        <h2 class="section-title">Hippopotenuse Calculator</h2>
+        <p class="section-subtitle">Calculate the hypotenuse and other triangle properties with our cute hippo-powered
+          calculator!</p>
+
+        <div class="calculator-grid">
+          <div class="calculator-card">
+            <h3>Right Triangle Calculator</h3>
+            <div class="input-group">
+              <label for="side-a">Side A (Adjacent)</label>
+              <input type="number" id="side-a" placeholder="Enter length" step="0.01">
+            </div>
+            <div class="input-group">
+              <label for="side-b">Side B (Opposite)</label>
+              <input type="number" id="side-b" placeholder="Enter length" step="0.01">
+            </div>
+            <button class="btn btn-calculate" onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+
+            <div class="results" id="results">
+              <div class="result-item">
+                <span class="result-label">Hypotenuse (C):</span>
+                <span class="result-value" id="hypotenuse-result">-</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Angle θ:</span>
+                <span class="result-value" id="angle-result">-</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Area:</span>
+                <span class="result-value" id="area-result">-</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator-visual">
+            <div class="interactive-triangle">
+              <svg viewBox="0 0 200 150" class="triangle-svg">
+                <polygon points="20,130 180,130 180,30" fill="none" stroke="#8B5CF6" stroke-width="2" />
+                <text x="15" y="140" fill="#8B5CF6" font-size="12">A</text>
+                <text x="185" y="135" fill="#8B5CF6" font-size="12">B</text>
+                <text x="185" y="35" fill="#8B5CF6" font-size="12">C</text>
+                <text x="160" y="140" fill="#8B5CF6" font-size="10">θ</text>
+                <path d="M 160 130 A 20 20 0 0 1 180 110" fill="none" stroke="#8B5CF6" stroke-width="1" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About $HIPPO</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>The Story Behind Hippopotenuse</h3>
+            <p>
+              $HIPPO is more than just a meme coin - it's an educational revolution! Born from the brilliant
+              combination of "hippopotamus" and "hypotenuse," this project brings mathematics to life in the
+              most adorable way possible.
+            </p>
+            <p>
+              Our cute hippo mascot slides down the hypotenuse of a right triangle, teaching geometry
+              while making everyone smile. Perfect for the crypto community that loves both learning and fun!
+            </p>
+            <div class="features">
+              <div class="feature">
+                <div class="feature-icon">📐</div>
+                <h4>Educational</h4>
+                <p>Learn geometry through cute visuals</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🦛</div>
+                <h4>Cute Mascot</h4>
+                <p>Adorable hippo character</p>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h4>Meme Power</h4>
+                <p>Viral potential on Bonk.fun</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community-section">
+      <div class="container">
+        <h2 class="section-title">Join Our Community</h2>
+        <p class="section-subtitle">Connect with fellow math enthusiasts and meme lovers! Be part of the $HIPPO family.
+        </p>
+
+        <div class="community-content">
+          <div class="community-card">
+            <div class="community-icon">🐦</div>
+            <h3>Twitter Community</h3>
+            <p>Follow us on Twitter for the latest updates, memes, and mathematical fun! Join thousands of $HIPPO
+              enthusiasts.</p>
+            <div class="community-stats">
+              <div class="stat">
+                <span class="stat-number">New community</span>
+                <span class="stat-label">Be the first!</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Active</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Fun</span>
+              </div>
+            </div>
+            <a href="https://twitter.com/hipopotenuse" target="_blank" class="btn btn-community">
+              <span class="btn-icon">🐦</span>
+              Follow on Twitter
+            </a>
+          </div>
+
+          <div class="community-benefits">
+            <h3>Why Join Our Community?</h3>
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-text">
+                  <h4>Early Access</h4>
+                  <p>Get first dibs on new features and announcements</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">🤝</div>
+                <div class="benefit-text">
+                  <h4>Community Support</h4>
+                  <p>Connect with like-minded math and meme enthusiasts</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">🎉</div>
+                <div class="benefit-text">
+                  <h4>Exclusive Content</h4>
+                  <p>Access to special memes, tutorials, and behind-the-scenes</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">🚀</div>
+                <div class="benefit-text">
+                  <h4>Launch Updates</h4>
+                  <p>Stay informed about $HIPPO's journey to the moon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 $HIPPO - Hippopotenuse. The mathematical meme that's taking over Bonk.fun! 🦛📐</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
